@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tell Me a Joke</title>
+    <style>
+      /* Set the font for the entire page */
+      body {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        background-color: #f5f5f5;
+        text-align: center;
+      }
+
+      /* Style the page heading */
+      h1 {
+        color: #333;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        font-size: 36px;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+      }
+
+      /* Style the joke container */
+      #joke-container {
+        margin: 0 auto;
+        width: 400px;
+        padding: 20px;
+        border-radius: 10px;
+        background-color: #fff;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      /* Style the joke text */
+      #joke {
+        margin-bottom: 20px;
+        font-size: 24px;
+        line-height: 1.5;
+      }
+
+      /* Style the "Tell me a joke" button */
+      button {
+        margin-top: 20px;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        background-color: #333;
+        color: #fff;
+        font-size: 18px;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        cursor: pointer;
+        transition: background-color 0.2s ease-in-out;
+      }
+
+      button:hover {
+        background-color: #444;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Tell Me a Joke</h1>
+    <div id="joke-container">
+      <p id="joke"></p>
+      <button onclick="tellJoke()">Tell me a joke</button>
+    </div>
+
+    <script>
+      const jokes = [
+        "Why don't scientists trust atoms? Because they make up everything!",
+        "Why did the tomato turn red? Because it saw the salad dressing!",
+        "Why don't oysters give to charity? Because they're shellfish!",
+        "Why do we tell actors to 'break a leg?' Because every play has a cast!",
+        "Why did the math book look so sad? Because it had too many problems!",
+        "Why did the chicken cross the playground? To get to the other slide!",
+        "Why did the banana go to the doctor? Because it wasn't peeling well!",
+        "What do you call a fake noodle? An impasta!",
+        "What do you call a can opener that doesn't work? A can't opener!",
+        "Why do birds fly south for the winter? Because it's too far to walk!"
+      ];
+
+      function tellJoke() {
+        const jokeIndex = Math.floor(Math.random() * jokes.length);
+        document.getElementById("joke").innerHTML = jokes[jokeIndex];
+      }
+    </script>
+  </body>
+</html>
