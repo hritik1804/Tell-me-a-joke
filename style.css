@@ -2,3 +2,56 @@ html {
   height: 100%;
   width: 100%;
 }
+body {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        background-color: #f5f5f5;
+        text-align: center;
+      }
+
+      /* Style the page heading */
+      h1 {
+        color: #333;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        font-size: 36px;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+      }
+
+      /* Style the joke container */
+      #joke-container {
+        margin: 0 auto;
+        width: 400px;
+        padding: 20px;
+        border-radius: 10px;
+        background-color: #fff;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      /* Style the joke text */
+      #joke {
+        margin-bottom: 20px;
+        font-size: 24px;
+        line-height: 1.5;
+      }
+
+      /* Style the "Tell me a joke" button */
+      button {
+        margin-top: 20px;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        background-color: #333;
+        color: #fff;
+        font-size: 18px;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        cursor: pointer;
+        transition: background-color 0.2s ease-in-out;
+      }
+
+      button:hover {
+        background-color: #444;
+      }
